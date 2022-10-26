@@ -1,0 +1,82 @@
+@import 'styles/breakpoints';
+
+.SideBar {
+	color: var(--color-2);
+  margin: 10px;
+  margin-right: var(--padding-right);
+	min-width: 270px;
+}
+
+.Container {
+	background-color: var(--color-4);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.contacts {
+	padding-left: 0;
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		margin: 5px 0;
+
+		li {
+			padding: 5px;
+			border-radius: 4px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgba(0,0,0,0.1);
+			}
+		}
+	}
+}
+
+.skills {
+	padding-left: 0;
+
+	ul {
+		margin: 5px 0;
+		
+		li {
+			display: flex;
+			align-items: center;
+			padding: 5px;
+			border-radius: 4px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgba(0,0,0,0.1);
+			}
+		}
+	}
+}
+
+.languages {
+	padding-left: 0;
+
+	ul {
+		margin: 5px 0;
+
+		li {
+			display: flex;
+			align-items: center;
+			padding: 5px;
+			border-radius: 4px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgba(0,0,0,0.1);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $mobile) {
+	.Container {
+    padding-left: var(--padding-left);
+    border-radius: 0;
+  }
+}

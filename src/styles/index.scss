@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import 'styles/breakpoints';
+
+:root {
+  --color-2: #fafafa;
+  --color-3: #4caf50;
+  --color-3-light: #00bf53bd;
+  --color-4: #525659;
+  --padding-left: 50px;
+  --padding-right: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: $mobile) {
+	:root {
+    --padding-left: 20px;
+  }
+}

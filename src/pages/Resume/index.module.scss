@@ -1,0 +1,43 @@
+@import 'styles/breakpoints';
+
+.Resume {
+	height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 0.4fr 1.5fr 1.5fr 1.5fr;
+  grid-template-areas:
+    "HE HE"
+    "MA AS"
+    "MA AS"
+    "MA AS";
+  background-color: var(--color-2);
+}
+
+.Header {
+	grid-area: HE;
+}
+.Main {
+	grid-area: MA;
+}
+.SideBar {
+	grid-area: AS;
+}
+
+@media only screen and (max-width: $mobile) {
+	.Resume {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.5fr 1.5fr;
+    grid-template-areas:
+      "HE"
+      "MA"
+      "AS";
+  }
+
+  .Main {
+    margin-top: 70px;
+  }
+
+  .SideBar {
+    margin: 0;
+  }	
+}
