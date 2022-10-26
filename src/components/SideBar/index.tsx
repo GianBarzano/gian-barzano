@@ -27,6 +27,7 @@ export default function SideBar({ className = "" }: IProps) {
               <a
                 href="https://www.linkedin.com/in/gian-barzano-1815a549"
                 target="_blank"
+								rel="noreferrer"
               >
                 <FaLinkedinIn size={20} />
                 <h3>Linkedin</h3>
@@ -36,6 +37,7 @@ export default function SideBar({ className = "" }: IProps) {
               <a
                 href="https://wa.me/5521979343180?text=Gostaria%20de%20agendar%20uma%20conversa"
                 target="_blank"
+								rel="noreferrer"
               >
                 <FaWhatsapp size={20} />
                 <h3>Celular</h3>
